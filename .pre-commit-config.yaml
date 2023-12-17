@@ -46,3 +46,11 @@ repos:
     hooks:
       - id: djlint-reformat-django
       - id: djlint-django
+    
+    - repo: local
+      hooks:
+          - id: mypy
+            name: mypy
+            entry: mypy
+            language: system
+            types: [python]
